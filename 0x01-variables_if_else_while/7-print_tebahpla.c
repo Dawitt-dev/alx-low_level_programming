@@ -10,7 +10,7 @@ int main(void)
 	char str[] = "abcdefghijklmnopqrstuvwxyz";
 	int i;
 
-	for (i = 26; str[i] != '\26'; i++)
+	for (i = 0; str[i] != '\0'; i--)
 		putchar(str[i]);
 
 	putchar('\n');
