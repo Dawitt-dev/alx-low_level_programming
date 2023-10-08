@@ -16,15 +16,15 @@ int main(int argc, char *argv[])
 
 	while (argc <= 1)
 	{
-		if (atoi(argv[i]) == 0)
-		{
-			printf("Error\n");
-			return (1);
-		}
-		else
+		if (argv[0])
 		{
 			printf("0\n");
 			return (0);
+		}
+		else if (atoi(argv[i]) == 0)
+		{
+			printf("Error\n");
+			return (1);
 		}
 	}
 	for (i = 1; i < argc; i++)
@@ -40,6 +40,6 @@ int main(int argc, char *argv[])
 		}
 	}
 	printf("%d\n", sum);
-	
+
 	return (0);
 }
